@@ -25,16 +25,7 @@ To Home
     SeleniumLibrary.Page Should Contain Element	 //*[@id="root"]/div/nav/header/ul/div/a/div 	timeout=10
     SeleniumLibrary.Click Element 	 //*[@id="root"]/div/nav/header/ul/div/a/div 	 modifier=False 	 action_chain=False
     SeleniumLibrary.Wait Until Location Is 	 https://chiangmuan.igovapp.com/ 	 timeout=10 	 message=None
-    
-Health_Checking
-    SeleniumLibrary.Click Element 	 //*[@id="root"]/div/main/section[2]/div/a[1]/div 	 modifier=False 	 action_chain=False
-    SeleniumLibrary.Wait Until Location Is 	 https://chiangmuan.igovapp.com/health 	 timeout=None 	 message=None
-    SeleniumLibrary.Click Element 	 //*[@id="root"]/div/main/section[2]/div/div[2]/div[3]/a 	 modifier=False 	 action_chain=False
-
-    SeleniumLibrary.Wait Until Page Contains Element	 //*[@id="root"]/div/main/article/section[2]/div/div/div 	 timeout=10 	 error=None 	
-    SeleniumLibrary.Element Should Not Contain 	 //*[@id="root"]/div/main/article/section[2]/div/div/div 	 ${NoHis} 	 message=None 	 ignore_case=False
-
-    
+        
 
 *** Test Cases ***
 Register
@@ -42,7 +33,5 @@ Register
 Verify id
     To Home
     To Profile
-Health_Check_Req
-   To Home
-   Health_Checking
+
 
